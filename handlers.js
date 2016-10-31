@@ -46,7 +46,6 @@ handlers.getAll = (req, res) => {
       res.writeHead(200, {
         'Content-Type': 'application/json' 
       });
-      console.log(allData);
       res.write(JSON.stringify(allData));
       res.end();
     })
