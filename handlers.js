@@ -40,14 +40,12 @@ handlers.getSingle = (req, res, id) => {
 handlers.getAll = (req, res) => {
   fileStore.readDir(fileStore.path)
     .then(idArr => {
-      console.log('idArr in getAll: ', idArr);
       return fileStore.getAll(idArr);
     })
     .then(allData => {
       res.writeHead(200, {
         'Content-Type': 'application/json' 
       });
-      console.log(allData);
       res.write(JSON.stringify(allData));
       res.end();
     })
