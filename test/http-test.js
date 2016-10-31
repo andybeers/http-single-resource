@@ -3,7 +3,7 @@ const chaiHttp = require('chai-http');
 const server = require('../index.js');
 const rimraf = require('rimraf');
 const assert = chai.assert;
-const fileStore = require('../lib/dotaTeam');
+const fileStore = require('../lib/fileStore');
 chai.use(chaiHttp);
 
 describe('Our server responds to requests', done => {
