@@ -1,4 +1,4 @@
-const fileStore = require('./lib/dotaTeam');
+const fileStore = require('./lib/fileStore');
 const bodyReader = require('./lib/bodyReader');
 const handlers = {};
 
